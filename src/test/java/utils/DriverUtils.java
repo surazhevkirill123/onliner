@@ -1,11 +1,12 @@
 package utils;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 
 public class DriverUtils {
     public static void openBrowser(){
-//        Configuration.browser = EDGE;
+        Configuration.headless = true;
         Selenide.open("https://google.com");
     }
 
