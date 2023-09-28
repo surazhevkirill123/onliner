@@ -8,7 +8,7 @@ public class BaseWebTest {
     @BeforeSuite
     public void openBrowser(){
         DriverUtils.openBrowser();
-        DriverUtils.browserConfiguration();
+//        DriverUtils.browserConfiguration();
     }
 
     @AfterSuite
