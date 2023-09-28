@@ -14,16 +14,9 @@ public class DriverUtils {
     public static void openBrowser(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("--verbose");
-        options.addArguments("-no-sandbox");
-        options.addArguments("--whitelisted-ips");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--window-size=1920x1080");
-
-        options.addArguments("--ignore-certificate-errors");
-        options.setExperimentalOption(
-                "excludeSwitches", Collections.singletonList("enable-automation"));
+//        options.addArguments("--headless");
+//        options.setExperimentalOption(
+//                "excludeSwitches", Collections.singletonList("enable-automation"));
         WebDriverRunner.setWebDriver(new ChromeDriver(options));
         Selenide.open("https://google.com");
     }
