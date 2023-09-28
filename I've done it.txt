@@ -1,0 +1,4 @@
+selenide - 6.19.0(добавили поддержку google chrome 117)
+сменил кодировку в jenkins.xml <arguments>-Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -Dfile.encoding=UTF8 -jar "C:\Program Files\Jenkins\jenkins.war" --httpPort=8080 --webroot="%ProgramData%\Jenkins\war"</arguments>
+убрал всю конфигурацию браузера - она мешала нахождению элементов в странице в jenkins
+в selenium 4.6.0 добавили selenium manager, который заменяет webdrivermanager и выполняет driver management автоматически
